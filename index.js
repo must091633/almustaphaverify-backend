@@ -1,19 +1,5 @@
+
 require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-// Root Route mai nuna Shafin Dashboard da API Docs
-app.get('/', (req, res) => {
-  res.send(`
-  
-        require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
@@ -159,4 +145,3 @@ app.post('/v2/cac/search', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
